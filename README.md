@@ -26,19 +26,19 @@
 
 usersテーブル	✔︎.    				
 カラム名	　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　型	　　　　　　　　　　　　　　　　　PRIMARY KEY	UNIQUE KEY	NOT NULL	FOREIGN KEY
-id	　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　unsigned bigint	　　　　　　　　◯			
-name	　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　varchar (255)			　　　　◯	
-email	　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　varchar (255)		　　　　　　　　◯	　　　　　　　　　　　　　　　　　　　　　◯	
+id	　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　unsigned bigint	　　　　　　　　◯			
+name	　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　varchar (255)			　　　　　　　　◯	
+email	　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　varchar (255)　　　　　　　　　　　　　　　　　◯	　　　　　　　　　　　　　　　　　　　　　　　　◯	
 email_verified_at	　　　　　　timestamp				
-password	　　　　　　　　　　　　　　　　　　　　　　varchar (255)			　　　　◯	
+password	　　　　　　　　　　　　　　　　　　　　　　varchar (255)		　　　　　　　　　◯	
 rememberToken	　　　　　　　　　　　　　　varchar (100)				
 created_at	　　　　　　　　　　　　　　　　　　timestamp				
 updated_at	　　　　　　　　　　　　　　　　　　timestamp				
 					
 worksテーブル    ✔︎　					
 カラム名	　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　型	　　　　　　　　　　　　　　　　　　　PRIMARY KEY	UNIQUE KEY	NOT NULL	FOREIGN KEY
-id	　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　unsigned bigint	　　　　　　　　　　　　◯			
-user_id	　　　　　　　　　　　　　　　　　　　　　　　　　　　unsigned bigint				◯
+id	　　　　　　　　　　　　　　　　　　　　　　　　　　　unsigned bigint	　　　　　　　　　　　　◯			
+user_id	　　　　　　　　　　　　　　　　　　　　　　　　　　　unsigned bigint	　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　◯
 start　　　　　　　　　　　　　　　　　　　　　　　　　　　　　	　　datetime				
 end	　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　datetime				
 created_at	　　　　　　　　　　　　　　　　　　timestamp				
@@ -46,8 +46,8 @@ updated_at	　　　　　　　　　　　　　　　　　　timestamp
 					
 breakingsテーブル     ✔︎　					
 カラム名	　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　型	　　　　　　　　　　　　　　　　　　　　PRIMARY KEY	UNIQUE KEY	NOT NULL	FOREIGN KEY
-id	　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　unsigned bigint	　　　　　　　　　　　　◯			
-work_id	　　　　　　　　　　　　　　　　　　　　　　　　　　　unsigned bigint				◯
+id	　　　　　　　　　　　　　　　　　　　　　　　　　　　unsigned bigint	　　　　　　　　　　　　◯			
+work_id	　　　　　　　　　　　　　　　　　　　　　　　　　　　unsigned bigint		　　　　　　　　　　　　　　　　　　　　　　　◯
 break_in	　　　　　　　　　　　　　　　　　　　　　　　datetime				
 break_out	　　　　　　　　　　　　　　　　　　　　　　　datetime				
 created_at	　　　　　　　　　　　　　　　　　　　timestamp				
